@@ -18,10 +18,5 @@
     <div class="col-12 col-md-6 mb-2">{{ .Render "summary-large" }}</div>
     {{ end }}
   </div>
-  <div class="row">
-    {{ range where .Pages.ByWeight ".Params.promoted" true }}
-    <div class="col-12 col-md-6 mb-2">{{ .Render "summary-large" }}</div>
-    {{ end }}
-  </div>
 </div>
 {{ end }}
